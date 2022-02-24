@@ -1,0 +1,27 @@
+<template>
+    <c-nav onmenuchange={handlemenu}></c-nav>
+
+    <template if:true={page.homePage}>
+        <c-home onmenuchange={handlemenu}></c-home>
+    </template>
+<!--
+    <template  if:true={page.aboutPage}>
+        <c-about></c-about>
+    </template>
+-->
+
+    <template if:true={page.resetPassPage}>
+        <c-forgotpass onmenuchange={handlemenu}></c-forgotpass>
+    </template>
+
+    <template if:true={page.loginPage}>
+        <c-login onmenuchange={handlemenu}></c-login>
+    </template>
+
+    <template if:true={page.signupPage}>
+        <c-signup onmenuchange={handlemenu}></c-signup>
+    </template>
+
+    <div style = "height: 0px"></div>
+    <c-footer></c-footer>
+</template>
