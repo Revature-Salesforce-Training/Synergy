@@ -1,4 +1,5 @@
 import {LightningElement} from 'lwc';
+import welcomeLink from '@salesforce/resourceUrl/welcome';
 
 export default class login extends LightningElement{
     handleMenu(e){
@@ -6,4 +7,5 @@ export default class login extends LightningElement{
         console.log(e.target.title);
     }
 
+    welcomeUrl=  `${welcomeLink}#welcome`
 }
