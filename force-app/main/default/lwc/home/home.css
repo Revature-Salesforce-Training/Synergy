@@ -1,11 +1,12 @@
 .background{
-    background-image: url(https://curious-koala-2lnowi-dev-ed--c.documentforce.com/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId=0688c000007X6a4&operationContext=CHATTER&contentId=05T8c00000Psg49);
-    background-position: center;
+    background-image: url(https://curious-koala-2lnowi-dev-ed--c.documentforce.com/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId=0688c000007X6a4&operationContext=CHATTER&contentId=05T8c00000Psg49g);
+    background-size:100vw;
+    height: 70vh;
     background-repeat: no-repeat;
+    width:100vw;
+    max-width:100%;
+    background-position: center;
     background-size: cover;
-    
-    height: 80vh;
-    width:100%;
 }
 
 .wrapper{

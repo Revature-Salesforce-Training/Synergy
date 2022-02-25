@@ -1,5 +1,7 @@
 <template>
-    <c-nav onmenuchange={handlemenu}></c-nav>
+    <c-nav loginemail={loginemail} onmenuchange={handlemenu}></c-nav>
+
+    <div style="background-color: pink;">
 
     <template if:true={page.homePage}>
         <c-home onmenuchange={handlemenu}></c-home>
@@ -13,15 +15,22 @@
     <template if:true={page.resetPassPage}>
         <c-forgotpass onmenuchange={handlemenu}></c-forgotpass>
     </template>
+    <template if:true={page.storePage}>
+        <c-shop onmenuchange={handlemenu}></c-shop>
+    </template>
+    <template if:true={page.supportPage}>
+        <c-support-page onmenuchange={handlemenu}></c-support-page>
+    </template>
 
     <template if:true={page.loginPage}>
-        <c-login onmenuchange={handlemenu}></c-login>
+        <c-login onmenuchange={handlemenu} onchangetoemail={changetoemail} loginemail={loginemail}></c-login>
     </template>
 
     <template if:true={page.signupPage}>
         <c-signup onmenuchange={handlemenu}></c-signup>
     </template>
-
+    
+    </div>
     <div style = "height: 0px"></div>
     <c-footer></c-footer>
 </template>

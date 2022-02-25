@@ -1,7 +1,7 @@
-import { LightningElement } from 'lwc';
+import {LightningElement} from 'lwc';
 
-export default class About extends LightningElement {
-    
-
+export default class about extends LightningElement{
 
 }
+
+//Commenting for versioning (Whitney)
